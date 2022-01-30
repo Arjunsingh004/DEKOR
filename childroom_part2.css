@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(245, 241, 241);
+}
+.menu{
+    background-color: honeydew;
+    text-align: center;
+    font-size: 20px;
+}
+.menu ul{
+    display: inline-flex;
+    padding: 30pz;
+    list-style: none;
+}
+.menu ul li{
+    padding: 20px;
+    text-decoration: none;
+    width: 120px;
+}
+.menu ul li a{
+    text-decoration: none;
+}
+.menu1{
+    display: none;
+}
+.menu ul li:hover .menu1{
+    display: block;
+    position: absolute;
+    background-color: honeydew;
+    
+}
+.menu ul li:hover .menu1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu ul li:hover .menu1 ul li{
+    width: 150px;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+#btn{
+    color: rgb(216, 208, 208);
+    height: 41px;
+    margin-top: 10px;
+    width: 200px;
+    margin-left: 200px;
+    background: #ff523b;
+    font-size: 20px;
+    border-radius: 30px;
+}
+#btn:hover{
+    background: #d63621;
+    color: white;
+    
+}
+#btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.fas{
+    padding-right: 6px;
+}
+
+/* Below Navbar editing  */
+
+.container{ 
+    width: 75%;
+    margin: auto; 
+    margin-top: 20px;
+    
+}
+.container-heading{
+    padding: 10px 0px 10px 15px;
+    border-left: 4px solid #ff523b;
+    font-size: 30px;
+    padding: 20px;
+}
+.bed-product{
+    min-height: 100vh;
+    width: 75%;
+    border: 3px solid black;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    margin-top: 20px; 
+    padding: 30px; 
+   
+    
+}
+.item{
+    height: 300px;
+    width: 342px;   
+    text-align: center;
+    
+}
+.item:hover{
+    background: white;
+}
+
+.bed-product .item{
+    
+    height: 300px;
+    transition: 0.2s ease-in-out;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.bed-product .item:hover{
+    height: 600px;
+    display: block;
+    box-shadow: 3px 3px 3px 3px rgb(172, 164, 164);
+}
+.bed-product .item .content-card-1{
+    position: relative;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+    padding: 20px 40px;
+
+    /* text-align: center; */
+}
+.bed-product .item:hover .content-card-1{
+    visibility: visible;
+    transition-delay: 0.2s;
+}
+.card-btn{
+    
+    color: rgb(216, 208, 208);
+    height: 30px;
+    width: 200px;
+    /* margin-left: 200px; */
+    border-radius: 30px;
+    background: #ff523b;
+    font-size: 15px;
+    margin-top: 15px;
+}
+.card-btn:hover{
+    background: #d63621;
+    color: white;
+    
+}
+.card-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.card-img-1{
+    width: 342px;
+    height: 200px;
+    background-image: url('https://images.unsplash.com/photo-1611048267707-aef79593a3ed?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+    background-position: center;
+    background-size: cover;
+    
+    /* box-shadow: 3px 3px 3px 3px rgb(172, 164, 164); */
+}
+.card-img-2{
+    width: 342px;
+    height: 200px;
+    background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gee-house-6-1536335251.jpg?crop=1.00xw:0.753xh;0.00170xw,0.184xh&resize=980:*');
+    background-position: center;
+    background-size: cover;
+    /* box-shadow: 3px 3px 3px 3px rgb(172, 164, 164); */
+}
+.card-img-3{
+    width: 342px;
+    height: 200px;
+    background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/b3e0da3d-f185-4ec7-8777-3503507b1204-aluncallenderphoto-simshilditch-0156-1542751050.jpg?crop=1.00xw:0.753xh;0,0.0995xh&resize=980:*');
+    background-position: center;
+    background-size: cover;
+    /* box-shadow: 3px 3px 3px 3px rgb(172, 164, 164); */
+}
+.card-img-4{
+    width: 342px;
+    height: 200px;
+    background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/c81aa07d-ef35-4e7f-a148-dff023e678c4-151105-ts-lonny-guestbed-202-1546628271.jpg?crop=1.00xw:0.715xh;0,0.285xh&resize=980:*');
+    background-position: center;
+    background-size: cover;
+    /* box-shadow: 3px 3px 3px 3px rgb(172, 164, 164); */
+}
+.card-img-5{
+    width: 342px;
+    height: 200px;
+    background-image: url('https://hips.hearstapps.com/edc.h-cdn.co/assets/15/18/1430512532-0109-ed-katieridder-waldron-kid-copy.jpg?crop=1.00xw:0.628xh;0,0.0957xh&resize=980:*');
+    background-position: center;
+    background-size: cover;
+    /* box-shadow: 3px 3px 3px 3px rgb(172, 164, 164); */
+}
+.card-img-6{
+    width: 342px;
+    height: 200px;
+    background-image: url('https://hips.hearstapps.com/edc.h-cdn.co/assets/cm/15/04/54c0c17b36d5a_-_nantucket-home-ed-0711-10-lgn.jpg?crop=1.00xw:0.628xh;0,0.274xh&resize=980:*');
+    background-position: center;
+    background-size: cover;
+    /* box-shadow: 3px 3px 3px 3px rgb(172, 164, 164); */
+}
+.card-img-7{
+    width: 342px;
+    height: 200px;
+    background-image: url('https://hips.hearstapps.com/edc.h-cdn.co/assets/cm/15/04/54c0dff334650_-_haynes-roberts-02-xln.jpg?crop=1.00xw:0.753xh;0,0.0587xh&resize=980:*');
+    background-position: center;
+    background-size: cover;
+}
+.card-img-8{
+    width: 342px;
+    height: 200px;
+    background-image: url('');
+    background-position: center;
+    background-size: cover;
+    /* box-shadow: 3px 3px 3px 3px rgb(172, 164, 164); */
+}
+.card-img-9{
+    width: 342px;
+    height: 200px;
+    background-image: url('');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 3px 3px 3px 3px rgb(172, 164, 164);
+}
+h2:hover{
+    color: #ff523b;
+}
+h2 {
+    margin-top: 10px;
+}
+
+
+
+
+
+/* This is footer editing */
+.footer{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 60px 0 20px;
+    font-size: 16px;
+    display: flex;   
+}
+.footer-col-1 {
+    /* border: 2px solid white; */
+    padding: 30px;
+    width: 30%;
+    padding-bottom: 30px;
+    margin: 20px;
+    text-align: center;
+    
+}
+.footer-col-1 h3{
+    font-size: 17px;
+}
+.footer-col-1 ul{
+    list-style: none;
+}
+.footer-col-1 ul li {
+    padding: 6px;
+}
+.footer-col-1 ul li:hover{
+    color: #ff523b;
+}
+.footer-col-2 ul li a{
+    color: white;
+    text-decoration: none;
+}
+.footer-col-2 ul li a:hover{
+    color: #ff523b;
+    
+}
+.footer-col-2 ul{
+    list-style: none;
+}
+.footer-col-2 h3{
+    font-size: 17px;
+}
+.footer-col-2 ul li {
+    padding: 6px;
+}
+.footer-col-2{
+    /* border: 2px solid white; */
+    padding: 30px;
+    width: 30%;
+    padding-bottom: 30px;
+    margin: 20px;
+    text-align: center;
+    
+}
+.footer-col-1 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer-col-1 ul li a:hover{
+    color: #ff523b;
+}
+.footer-col-2 ul li a{
+    color: white;
+    text-decoration: none;
+}
+.fab{
+    padding-right: 6px;
+}
+.footer-mid{
+    /* border: 2px solid white; */
+    padding: 30px;
+    width: 40%;
+    padding-bottom: 30px;
+    margin: 20px;
+    text-align: center;
+}
+.copyright{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.copyright p{
+    color: white;
+}
+.next-bar{
+    /* border: 3px solid blue; */
+    display: flex;
+    width: 83%;
+    margin: auto;
+    margin-top: 20px;
+}
+.next-bar a{
+    text-decoration: none;
+    color: white;
+}
+.bar{
+    /* border: 2px solid black; */
+    
+    padding:10px;
+    margin-left: 50px;
+    width: 20px;
+    text-align: center;
+    background-color: #ff523b;
+    color: white;
+    border-radius: 3px;
+    
+}
+.bar:hover{
+    box-shadow: 1px 1px 2px 2px rgb(151, 149, 149);
+    cursor: pointer;
+}
+.active{
+    background: #ac2513;
+}
